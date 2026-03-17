@@ -1,0 +1,1868 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Especialista en Pedagogía Terapéutica (PT), Audición y Lenguaje (AL) y orientación educativa. Recursos descargables, preparación de oposiciones y asesoría para docentes y familias en España." />
+  <meta name="keywords" content="pedagogía terapéutica, audición y lenguaje, oposiciones PT AL, recursos educativos, orientación educativa, psicopedagogía España" />
+  <title>Tu Nombre — Especialista PT, AL y Orientación Educativa</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,300&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─────────────────────────────────────────────────────
+       RESET & BASE
+    ───────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-weight: 400;
+      color: #1A2E44;
+      background-color: #F5F0E8;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─────────────────────────────────────────────────────
+       VARIABLES — sin cambios respecto al diseño original
+    ───────────────────────────────────────────────────── */
+    :root {
+      --navy:        #1A2E44;
+      --teal:        #2C7A6E;
+      --teal-dark:   #1e5a51;
+      --teal-light:  #e0f2ee;
+      --cream:       #F5F0E8;
+      --cream-dark:  #EDE7D9;
+      --terracotta:  #C96A3A;
+      --terra-light: #fde8d5;
+      --white:       #FFFFFF;
+      --text-muted:  #5A6A78;
+      --border:      rgba(26,46,68,0.11);
+      --max-w:       1120px;
+      --radius-sm:   6px;
+      --radius-md:   12px;
+      --radius-lg:   20px;
+    }
+
+    /* ─────────────────────────────────────────────────────
+       TIPOGRAFÍA
+    ───────────────────────────────────────────────────── */
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', Georgia, serif;
+      color: var(--navy);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    h1 { font-size: clamp(2.1rem, 4.8vw, 3.5rem); font-weight: 700; }
+    h2 { font-size: clamp(1.65rem, 3.4vw, 2.5rem); font-weight: 600; }
+    h3 { font-size: clamp(1.05rem, 2vw, 1.35rem); font-weight: 600; }
+    h4 { font-size: 0.98rem; font-weight: 600; }
+    p  { font-size: 1.03rem; color: var(--text-muted); margin-bottom: 1rem; }
+    p:last-child { margin-bottom: 0; }
+    a  { color: var(--teal); text-decoration: none; transition: color 0.2s; }
+    a:hover { color: var(--teal-dark); }
+    .sans { font-family: 'DM Sans', sans-serif; }
+    .lead { font-size: 1.15rem; font-weight: 300; line-height: 1.85; }
+
+    /* ─────────────────────────────────────────────────────
+       LAYOUT
+    ───────────────────────────────────────────────────── */
+    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 clamp(1.25rem, 4vw, 2.5rem); }
+    .section { padding: clamp(4rem, 8vw, 7rem) 0; }
+    .section--alt  { background-color: var(--white); }
+    .section--dark { background-color: var(--navy); }
+    .section--cream { background-color: var(--cream-dark); }
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 3rem; align-items: center; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 1.75rem; }
+    .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 1.5rem; }
+    .text-center { text-align: center; }
+
+    /* ─────────────────────────────────────────────────────
+       SECTION HEADERS
+    ───────────────────────────────────────────────────── */
+    .section-header { max-width: 680px; }
+    .section-header.center { margin: 0 auto; text-align: center; margin-bottom: 3.5rem; }
+    .section-eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 0.75rem;
+    }
+    .section-header p { font-size: 1.12rem; margin-top: 0.75rem; }
+    .divider {
+      width: 44px; height: 3px;
+      background: var(--teal);
+      border-radius: 2px;
+      margin: 1.1rem 0;
+    }
+    .divider.center { margin: 1.1rem auto; }
+
+    /* ─────────────────────────────────────────────────────
+       BOTONES — MEJORA: CTAs más directos y activos
+    ───────────────────────────────────────────────────── */
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.92rem; font-weight: 500;
+      padding: 0.78rem 1.65rem;
+      border-radius: var(--radius-sm);
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: all 0.22s ease;
+      text-decoration: none;
+      line-height: 1.2;
+    }
+    .btn-primary   { background: var(--teal); color: var(--white); border-color: var(--teal); }
+    .btn-primary:hover { background: var(--teal-dark); border-color: var(--teal-dark); color: var(--white); }
+    .btn-secondary { background: var(--terracotta); color: var(--white); border-color: var(--terracotta); }
+    .btn-secondary:hover { background: #a8541f; border-color: #a8541f; color: var(--white); }
+    .btn-outline   { background: transparent; color: var(--navy); border-color: var(--navy); }
+    .btn-outline:hover { background: var(--navy); color: var(--white); }
+    .btn-outline-teal { background: transparent; color: var(--teal); border-color: var(--teal); }
+    .btn-outline-teal:hover { background: var(--teal); color: var(--white); }
+    .btn-outline-white { background: transparent; color: var(--white); border-color: rgba(255,255,255,0.55); }
+    .btn-outline-white:hover { background: var(--white); color: var(--navy); }
+    .btn-ghost { background: none; border: none; color: var(--teal); padding: 0; font-size: 0.9rem; cursor: pointer; font-family: 'DM Sans', sans-serif; font-weight: 500; }
+    .btn-ghost:hover { color: var(--teal-dark); }
+    .btn-lg { padding: 0.95rem 2.1rem; font-size: 1rem; }
+    .btn-sm { padding: 0.5rem 1.1rem; font-size: 0.82rem; }
+    .btn-group { display: flex; gap: 0.9rem; flex-wrap: wrap; align-items: center; }
+
+    /* ─────────────────────────────────────────────────────
+       BADGES & TAGS
+    ───────────────────────────────────────────────────── */
+    .badge {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.68rem; font-weight: 600;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 0.28rem 0.72rem;
+      border-radius: 100px;
+    }
+    .badge-free    { background: var(--teal-light); color: var(--teal-dark); }
+    .badge-premium { background: var(--terra-light); color: #8c3f15; }
+    .badge-new     { background: #e8eaf6; color: #2e3a8c; }
+    .badge-hot     { background: #fde8d5; color: #8c3f15; }
+    .tag {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.7rem; font-weight: 500;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      padding: 0.22rem 0.62rem;
+      border-radius: 4px;
+      background: rgba(44,122,110,0.1);
+      color: var(--teal-dark);
+    }
+
+    /* ─────────────────────────────────────────────────────
+       ICON BOX
+    ───────────────────────────────────────────────────── */
+    .icon-box {
+      width: 46px; height: 46px;
+      border-radius: 10px;
+      background: rgba(44,122,110,0.1);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1.15rem;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .icon-box--terra { background: rgba(201,106,58,0.1); }
+    .icon-box--navy  { background: rgba(26,46,68,0.08); }
+    .icon-box--sm    { width: 36px; height: 36px; font-size: 1rem; margin-bottom: 0; border-radius: 8px; }
+
+    /* ─────────────────────────────────────────────────────
+       CARDS BASE
+    ───────────────────────────────────────────────────── */
+    .card {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      border: 1px solid var(--border);
+      transition: box-shadow 0.25s ease, transform 0.25s ease;
+    }
+    .card:hover { box-shadow: 0 8px 32px rgba(26,46,68,0.09); transform: translateY(-2px); }
+
+    /* ─────────────────────────────────────────────────────
+       NAVEGACIÓN — Sin cambios visuales, mejorados los links
+    ───────────────────────────────────────────────────── */
+    .nav {
+      position: sticky; top: 0; z-index: 200;
+      background: rgba(245,240,232,0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      display: flex; align-items: center;
+      justify-content: space-between;
+      height: 66px; gap: 1.5rem;
+    }
+    .nav-logo {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.22rem; font-weight: 700;
+      color: var(--navy); letter-spacing: -0.02em;
+      white-space: nowrap;
+    }
+    .nav-logo span { color: var(--teal); }
+    .nav-links { display: flex; list-style: none; gap: 0.1rem; align-items: center; }
+    .nav-links a {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.86rem; font-weight: 400;
+      color: var(--text-muted);
+      padding: 0.38rem 0.68rem;
+      border-radius: 5px;
+      transition: color 0.2s, background 0.2s;
+    }
+    .nav-links a:hover { color: var(--navy); background: rgba(26,46,68,0.06); }
+    .nav-links a.active { color: var(--teal); font-weight: 500; }
+    /* MEJORA: CTA de nav más visible — terracotta para destacar */
+    .nav-cta-wrap { display: flex; gap: 0.6rem; align-items: center; margin-left: 0.75rem; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+    .hamburger span { width: 22px; height: 2px; background: var(--navy); border-radius: 2px; transition: all 0.3s; }
+
+    /* ─────────────────────────────────────────────────────
+       MEJORA 7: BARRA FLOTANTE CTA
+       Aparece al hacer scroll. Convierte pasivos en activos.
+    ───────────────────────────────────────────────────── */
+    .sticky-cta {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      z-index: 300;
+      background: var(--navy);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 0.85rem 1.5rem;
+      transform: translateY(100%);
+      transition: transform 0.35s ease;
+      display: flex; align-items: center;
+      justify-content: center; gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .sticky-cta.visible { transform: translateY(0); }
+    .sticky-cta p { color: rgba(255,255,255,0.75); font-family: 'DM Sans', sans-serif; font-size: 0.88rem; margin: 0; }
+    .sticky-cta-close {
+      position: absolute; right: 1rem; top: 50%; transform: translateY(-50%);
+      background: none; border: none; color: rgba(255,255,255,0.5); cursor: pointer;
+      font-size: 1.1rem; line-height: 1; padding: 0.25rem;
+    }
+    .sticky-cta-close:hover { color: var(--white); }
+
+    /* ─────────────────────────────────────────────────────
+       HERO — MEJORA 1: Mensaje más claro + CTA más directo
+    ───────────────────────────────────────────────────── */
+    .hero {
+      background-color: var(--cream);
+      padding: clamp(4.5rem, 9vw, 8rem) 0 clamp(3.5rem, 7vw, 6rem);
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; right: -100px; top: -60px;
+      width: 550px; height: 550px; border-radius: 50%;
+      background: rgba(44,122,110,0.055); pointer-events: none;
+    }
+    .hero::after {
+      content: '';
+      position: absolute; left: -80px; bottom: -80px;
+      width: 380px; height: 380px; border-radius: 50%;
+      background: rgba(201,106,58,0.045); pointer-events: none;
+    }
+    .hero-inner {
+      position: relative; z-index: 1;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 4rem; align-items: center;
+    }
+    /* MEJORA: Eyebrow con contexto específico */
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 0.55rem;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.76rem; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--teal); margin-bottom: 1.25rem;
+    }
+    .hero-eyebrow::before {
+      content: ''; display: block;
+      width: 22px; height: 2px;
+      background: var(--teal); border-radius: 2px;
+    }
+    /* MEJORA: H1 con estructura problema→quién→solución */
+    .hero h1 { margin-bottom: 1.35rem; }
+    .hero h1 em { font-style: italic; color: var(--teal); }
+    /* MEJORA: Subtítulo más concreto, no genérico */
+    .hero-sub {
+      font-size: 1.12rem; font-weight: 300;
+      color: var(--text-muted);
+      margin-bottom: 2.25rem;
+      max-width: 470px; line-height: 1.8;
+    }
+    /* MEJORA: Prueba social inmediata debajo del CTA */
+    .hero-proof {
+      display: flex; align-items: center; gap: 1rem;
+      margin-top: 1.5rem; flex-wrap: wrap;
+    }
+    .hero-proof-item {
+      display: flex; align-items: center; gap: 0.4rem;
+      font-family: 'DM Sans', sans-serif; font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .hero-proof-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--teal); flex-shrink: 0; }
+    /* MEJORA: Hero card más específica y orientada a descarga */
+    .hero-card-main {
+      background: var(--white); border-radius: var(--radius-lg);
+      padding: 2.25rem; border: 1px solid var(--border);
+    }
+    .hero-card-tag {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-family: 'DM Sans', sans-serif; font-size: 0.72rem;
+      font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--teal-dark); margin-bottom: 1rem;
+    }
+    .hero-card-tag svg { width: 14px; height: 14px; }
+    .hero-card-main h3 { font-size: 1.1rem; margin-bottom: 0.65rem; }
+    /* Lista de qué incluye el recurso destacado */
+    .hero-resource-list { list-style: none; margin: 1rem 0 1.5rem; }
+    .hero-resource-list li {
+      font-family: 'DM Sans', sans-serif; font-size: 0.84rem;
+      color: var(--text-muted); padding: 0.28rem 0 0.28rem 1.3rem;
+      position: relative; border-bottom: 1px solid rgba(26,46,68,0.05);
+    }
+    .hero-resource-list li:last-child { border-bottom: none; }
+    .hero-resource-list li::before {
+      content: '✓'; position: absolute; left: 0;
+      color: var(--teal); font-size: 0.75rem; font-weight: 700;
+    }
+    .hero-card-float {
+      position: absolute;
+      background: var(--teal); color: var(--white);
+      border-radius: var(--radius-md); padding: 0.9rem 1.35rem;
+      font-family: 'DM Sans', sans-serif; font-size: 0.82rem; font-weight: 500;
+      bottom: -1.25rem; left: -1.75rem;
+      box-shadow: 0 8px 24px rgba(44,122,110,0.28);
+    }
+    .hero-card-float .num {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.7rem; font-weight: 700;
+      display: block; line-height: 1.1;
+    }
+    /* Stats en hero */
+    .stat-row { display: flex; gap: 1.75rem; margin-top: 1.85rem; padding-top: 1.85rem; border-top: 1px solid var(--border); }
+    .stat-num { font-family: 'Playfair Display', serif; font-size: 1.9rem; font-weight: 700; color: var(--navy); line-height: 1; }
+    .stat-label { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; color: var(--text-muted); margin-top: 0.2rem; }
+
+    /* ─────────────────────────────────────────────────────
+       TRUST BAR
+    ───────────────────────────────────────────────────── */
+    .trust-bar { background: var(--navy); padding: 1.15rem 0; }
+    .trust-items { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 0.5rem 2.25rem; }
+    .trust-item { display: flex; align-items: center; gap: 0.55rem; font-family: 'DM Sans', sans-serif; font-size: 0.8rem; font-weight: 400; color: rgba(255,255,255,0.72); }
+    .trust-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--teal); }
+
+    /* ─────────────────────────────────────────────────────
+       AUDIENCIA — Para quién
+    ───────────────────────────────────────────────────── */
+    .audience-card {
+      background: var(--white); border-radius: var(--radius-md);
+      padding: 2rem; border: 1px solid var(--border);
+      transition: all 0.25s; cursor: default;
+    }
+    .audience-card:hover { border-color: var(--teal); box-shadow: 0 4px 20px rgba(44,122,110,0.09); transform: translateY(-3px); }
+    .audience-icon { font-size: 1.85rem; margin-bottom: 0.9rem; display: block; }
+    .audience-card h3 { font-size: 1.18rem; margin-bottom: 0.7rem; }
+    .audience-list { list-style: none; margin-top: 0.9rem; }
+    .audience-list li {
+      font-family: 'DM Sans', sans-serif; font-size: 0.86rem;
+      color: var(--text-muted); padding: 0.28rem 0 0.28rem 1.2rem;
+      position: relative;
+    }
+    .audience-list li::before { content: '→'; position: absolute; left: 0; color: var(--teal); font-size: 0.73rem; }
+
+    /* ─────────────────────────────────────────────────────
+       SOBRE MÍ — MEJORA 5: Adelantada, más autoridad + cercanía
+    ───────────────────────────────────────────────────── */
+    .about-photo {
+      width: 100%; aspect-ratio: 4/5;
+      background: var(--cream-dark);
+      border-radius: var(--radius-lg);
+      display: flex; align-items: center; justify-content: center;
+      border: 1px solid var(--border); overflow: hidden; position: relative;
+    }
+    .about-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .about-photo-placeholder { display: flex; flex-direction: column; align-items: center; gap: 0.65rem; }
+    .about-tag-float {
+      position: absolute; right: -1.4rem; top: 2rem;
+      background: var(--terracotta); color: var(--white);
+      font-family: 'DM Sans', sans-serif; font-size: 0.78rem; font-weight: 500;
+      padding: 0.55rem 1.15rem; border-radius: 100px;
+      white-space: nowrap; box-shadow: 0 4px 12px rgba(201,106,58,0.3);
+    }
+    .credentials { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 1.4rem; }
+    .credential {
+      font-family: 'DM Sans', sans-serif; font-size: 0.78rem;
+      padding: 0.3rem 0.82rem; border-radius: 100px;
+      background: rgba(44,122,110,0.08); color: var(--teal-dark); font-weight: 500;
+    }
+    /* MEJORA: Bloque "Por qué confiar en mí" explícito */
+    .trust-reasons { margin: 1.5rem 0; display: flex; flex-direction: column; gap: 0.9rem; }
+    .trust-reason {
+      display: flex; align-items: flex-start; gap: 0.85rem;
+      padding: 1rem 1.15rem;
+      background: var(--cream); border-radius: var(--radius-sm);
+      border-left: 3px solid var(--teal);
+    }
+    .trust-reason-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 0.05rem; }
+    .trust-reason-text h4 { font-size: 0.9rem; font-family: 'DM Sans', sans-serif; margin-bottom: 0.2rem; }
+    .trust-reason-text p  { font-size: 0.82rem; margin: 0; }
+
+    /* ─────────────────────────────────────────────────────
+       SERVICIOS — MEJORA 2: Jerarquía clara, proceso visible, CTAs activos
+    ───────────────────────────────────────────────────── */
+    /* MEJORA: Intro de servicios con propuesta de valor directa */
+    .services-intro {
+      background: var(--navy);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 3rem;
+      margin-bottom: 2.5rem;
+      display: flex; align-items: center;
+      justify-content: space-between; gap: 2rem; flex-wrap: wrap;
+    }
+    .services-intro h3 { color: var(--white); font-size: 1.4rem; }
+    .services-intro p  { color: rgba(255,255,255,0.7); margin-top: 0.5rem; font-size: 0.95rem; }
+    .service-card {
+      background: var(--white); border-radius: var(--radius-md);
+      padding: 2rem; border: 1px solid var(--border);
+      transition: all 0.25s; display: flex; flex-direction: column;
+    }
+    .service-card:hover { box-shadow: 0 8px 28px rgba(26,46,68,0.1); transform: translateY(-2px); }
+    /* MEJORA: Card destacado con acento de color lateral */
+    .service-card.featured {
+      border-color: var(--teal);
+      border-top: 3px solid var(--teal);
+    }
+    .service-card h3 { font-size: 1.18rem; margin: 0.9rem 0 0.7rem; }
+    .service-card > p { font-size: 0.93rem; flex: 1; }
+    .service-price {
+      font-family: 'Playfair Display', serif; font-size: 1.55rem;
+      font-weight: 700; color: var(--navy); margin: 1.35rem 0 0.2rem;
+    }
+    .service-price span { font-family: 'DM Sans', sans-serif; font-size: 0.78rem; font-weight: 400; color: var(--text-muted); }
+    .service-includes { list-style: none; margin: 0.9rem 0 1.35rem; }
+    .service-includes li {
+      font-family: 'DM Sans', sans-serif; font-size: 0.86rem;
+      color: var(--text-muted); padding: 0.32rem 0 0.32rem 1.35rem;
+      position: relative; border-bottom: 1px solid rgba(26,46,68,0.055);
+    }
+    .service-includes li:last-child { border-bottom: none; }
+    .service-includes li::before { content: '✓'; position: absolute; left: 0; color: var(--teal); font-weight: 700; font-size: 0.78rem; }
+    /* MEJORA: Bloque de proceso "¿Cómo funciona?" en el card principal */
+    .service-process { margin: 1.25rem 0; }
+    .service-process-title { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.75rem; }
+    .service-steps { display: flex; gap: 0; }
+    .service-step {
+      flex: 1; text-align: center; padding: 0.75rem 0.5rem;
+      background: var(--cream); border-radius: var(--radius-sm);
+      position: relative;
+    }
+    .service-step:not(:last-child)::after {
+      content: '→'; position: absolute; right: -0.6rem; top: 50%;
+      transform: translateY(-50%); color: var(--teal); font-size: 0.8rem; z-index: 1;
+    }
+    .service-step:not(:first-child):not(:last-child) { border-radius: 0; }
+    .service-step:first-child { border-radius: var(--radius-sm) 0 0 var(--radius-sm); }
+    .service-step:last-child  { border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+    .step-num {
+      display: block; font-family: 'Playfair Display', serif;
+      font-size: 1.1rem; font-weight: 700; color: var(--teal); line-height: 1;
+    }
+    .step-label {
+      display: block; font-family: 'DM Sans', sans-serif;
+      font-size: 0.68rem; color: var(--text-muted); margin-top: 0.15rem;
+    }
+    /* MEJORA: Garantía de respuesta reducida fricción */
+    .service-guarantee {
+      margin-top: 0.75rem;
+      font-family: 'DM Sans', sans-serif; font-size: 0.78rem;
+      color: var(--text-muted); text-align: center;
+      display: flex; align-items: center; justify-content: center; gap: 0.35rem;
+    }
+
+    /* ─────────────────────────────────────────────────────
+       TESTIMONIOS — Se adelantan para reforzar servicios
+    ───────────────────────────────────────────────────── */
+    .testimonial-card {
+      background: var(--white); border-radius: var(--radius-md);
+      padding: 1.85rem; border: 1px solid var(--border); position: relative;
+    }
+    .testimonial-card::before {
+      content: '"'; position: absolute; top: 0.8rem; right: 1.35rem;
+      font-family: 'Playfair Display', serif; font-size: 3.5rem;
+      color: rgba(44,122,110,0.13); line-height: 1;
+    }
+    .testimonial-text { font-style: italic; font-size: 0.97rem; color: var(--navy); line-height: 1.75; margin-bottom: 1.35rem; }
+    .testimonial-author { display: flex; align-items: center; gap: 0.7rem; }
+    .testimonial-avatar {
+      width: 38px; height: 38px; border-radius: 50%;
+      background: var(--cream-dark); display: flex; align-items: center; justify-content: center;
+      font-family: 'DM Sans', sans-serif; font-size: 0.75rem; font-weight: 600; color: var(--teal-dark);
+    }
+    .testimonial-name  { font-family: 'DM Sans', sans-serif; font-size: 0.88rem; font-weight: 500; color: var(--navy); display: block; }
+    .testimonial-role  { font-family: 'DM Sans', sans-serif; font-size: 0.75rem; color: var(--text-muted); }
+    /* MEJORA: Resultado destacado en el testimonio */
+    .testimonial-result {
+      display: inline-block; margin-bottom: 1rem;
+      background: var(--teal-light); color: var(--teal-dark);
+      font-family: 'DM Sans', sans-serif; font-size: 0.72rem; font-weight: 600;
+      padding: 0.25rem 0.7rem; border-radius: 100px; letter-spacing: 0.06em; text-transform: uppercase;
+    }
+
+    /* ─────────────────────────────────────────────────────
+       RECURSOS — MEJORA 3: Valor percibido + captación email inline
+    ───────────────────────────────────────────────────── */
+    .resource-card {
+      background: var(--white); border-radius: var(--radius-md);
+      padding: 0; border: 1px solid var(--border);
+      transition: all 0.25s; display: flex; flex-direction: column;
+      overflow: hidden;
+    }
+    .resource-card:hover { box-shadow: 0 8px 28px rgba(26,46,68,0.1); transform: translateY(-2px); }
+    /* MEJORA: Cabecera de color con categoría visible */
+    .resource-header {
+      padding: 1.35rem 1.75rem 1.1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .resource-header--teal   { background: linear-gradient(135deg, #e0f2ee 0%, #c7ebe2 100%); }
+    .resource-header--terra  { background: linear-gradient(135deg, #fde8d5 0%, #f9d4b3 100%); }
+    .resource-header--navy   { background: linear-gradient(135deg, #e8edf3 0%, #d6dde6 100%); }
+    .resource-header--gold   { background: linear-gradient(135deg, #fef9e7 0%, #fdf0c3 100%); }
+    .resource-format-row { display: flex; align-items: center; justify-content: space-between; margin-top: 0.5rem; }
+    .resource-format { display: flex; align-items: center; gap: 0.45rem; font-family: 'DM Sans', sans-serif; font-size: 0.72rem; color: var(--text-muted); }
+    .resource-format svg { width: 13px; height: 13px; }
+    .resource-body { padding: 1.4rem 1.75rem; flex: 1; display: flex; flex-direction: column; }
+    .resource-card h3 { font-size: 1.06rem; margin-bottom: 0.6rem; color: var(--navy); }
+    .resource-card p  { font-size: 0.88rem; }
+    /* MEJORA: Lo que incluye el recurso — valor percibido */
+    .resource-includes { list-style: none; margin: 0.85rem 0; }
+    .resource-includes li {
+      font-family: 'DM Sans', sans-serif; font-size: 0.8rem;
+      color: var(--text-muted); padding: 0.22rem 0 0.22rem 1.15rem; position: relative;
+    }
+    .resource-includes li::before { content: '·'; position: absolute; left: 0.3rem; color: var(--teal); font-weight: 700; }
+    /* MEJORA: Formulario email inline en recursos gratuitos */
+    .resource-download {
+      margin-top: auto; padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+    }
+    .resource-email-form { display: flex; gap: 0.5rem; margin-top: 0.6rem; }
+    .resource-email-form input {
+      flex: 1; min-width: 0;
+      padding: 0.6rem 0.85rem;
+      border: 1.5px solid var(--border); border-radius: var(--radius-sm);
+      font-family: 'DM Sans', sans-serif; font-size: 0.82rem;
+      color: var(--navy); background: var(--cream); outline: none;
+      transition: border-color 0.2s;
+    }
+    .resource-email-form input:focus { border-color: var(--teal); }
+    .resource-email-form input::placeholder { color: var(--text-muted); font-size: 0.8rem; }
+    .resource-download-label { font-family: 'DM Sans', sans-serif; font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.35rem; }
+    /* Contador de descargas */
+    .download-count { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.35rem; margin-top: 0.5rem; }
+    .download-count svg { width: 11px; height: 11px; }
+    /* Card "premium lock" */
+    .resource-lock {
+      display: flex; flex-direction: column; align-items: flex-start;
+      gap: 0.75rem; padding: 1.25rem 1.75rem;
+      border-top: 1px solid var(--border); margin-top: auto;
+    }
+    .resource-lock-info { font-family: 'DM Sans', sans-serif; font-size: 0.78rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.4rem; }
+
+    /* ─────────────────────────────────────────────────────
+       OPOSICIONES STRIP
+    ───────────────────────────────────────────────────── */
+    .opos-strip { background: linear-gradient(135deg, #1e5a51 0%, #2C7A6E 100%); padding: 3.25rem 0; }
+    .opos-inner { display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
+    .opos-inner h2 { color: var(--white); font-size: clamp(1.35rem, 2.8vw, 1.9rem); }
+    .opos-inner p  { color: rgba(255,255,255,0.72); margin-top: 0.4rem; font-size: 0.95rem; }
+    /* MEJORA: Mini-stats en strip de oposiciones */
+    .opos-stats { display: flex; gap: 2rem; flex-wrap: wrap; }
+    .opos-stat-num { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--white); line-height: 1; display: block; }
+    .opos-stat-lbl { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; color: rgba(255,255,255,0.65); margin-top: 0.1rem; display: block; }
+
+    /* ─────────────────────────────────────────────────────
+       BLOG — MEJORA 4: Sin emojis, diseño editorial limpio
+    ───────────────────────────────────────────────────── */
+    .blog-card {
+      background: var(--white); border-radius: var(--radius-md);
+      overflow: hidden; border: 1px solid var(--border);
+      transition: all 0.25s; display: flex; flex-direction: column;
+    }
+    .blog-card:hover { box-shadow: 0 8px 24px rgba(26,46,68,0.09); transform: translateY(-2px); }
+    /* MEJORA: Thumbnail tipográfico editorial — sin emojis */
+    .blog-thumb {
+      height: 168px; position: relative;
+      display: flex; align-items: flex-end; padding: 1.5rem 1.75rem;
+      overflow: hidden;
+    }
+    .blog-thumb-bg {
+      position: absolute; inset: 0;
+      /* Color de fondo según categoría — sin imágenes, sin emojis */
+    }
+    .blog-thumb-bg--oposiciones { background: linear-gradient(135deg, #1A2E44 60%, #2C7A6E 100%); }
+    .blog-thumb-bg--al          { background: linear-gradient(135deg, #1e5a51 60%, #2C7A6E 100%); }
+    .blog-thumb-bg--orientacion { background: linear-gradient(135deg, #C96A3A 50%, #e88a5a 100%); }
+    .blog-thumb-bg--pt          { background: linear-gradient(135deg, #2e3a8c 50%, #5060c0 100%); }
+    /* Número decorativo de fondo */
+    .blog-thumb-num {
+      position: absolute; right: 1.5rem; top: -0.5rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 7rem; font-weight: 700; line-height: 1;
+      color: rgba(255,255,255,0.06); pointer-events: none;
+      user-select: none;
+    }
+    .blog-thumb-content { position: relative; z-index: 1; }
+    .blog-thumb-category {
+      font-family: 'DM Sans', sans-serif; font-size: 0.68rem; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+    }
+    .blog-thumb-title {
+      font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 600;
+      color: var(--white); margin-top: 0.35rem; line-height: 1.3; max-width: 260px;
+    }
+    .blog-body { padding: 1.4rem 1.75rem; flex: 1; display: flex; flex-direction: column; }
+    .blog-meta { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 0.65rem; }
+    .blog-date { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; color: var(--text-muted); }
+    .blog-read-time { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; color: var(--text-muted); }
+    .blog-sep { width: 3px; height: 3px; border-radius: 50%; background: var(--border); }
+    .blog-card p { font-size: 0.88rem; flex: 1; }
+    .blog-read-more {
+      display: inline-flex; align-items: center; gap: 0.38rem;
+      font-family: 'DM Sans', sans-serif; font-size: 0.83rem; font-weight: 500;
+      color: var(--teal); margin-top: 1.1rem; padding-top: 0.9rem;
+      border-top: 1px solid var(--border);
+      transition: gap 0.2s;
+    }
+    .blog-read-more:hover { gap: 0.65rem; }
+
+    /* ─────────────────────────────────────────────────────
+       NEWSLETTER
+    ───────────────────────────────────────────────────── */
+    .newsletter-block {
+      background: var(--navy); border-radius: var(--radius-lg);
+      padding: clamp(2.75rem, 5.5vw, 4.5rem); text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .newsletter-block::before {
+      content: ''; position: absolute; right: -50px; top: -50px;
+      width: 280px; height: 280px; border-radius: 50%;
+      background: rgba(44,122,110,0.1); pointer-events: none;
+    }
+    .newsletter-block h2   { color: var(--white); font-size: clamp(1.5rem, 3.2vw, 2.25rem); }
+    .newsletter-block > p  { color: rgba(255,255,255,0.68); font-size: 1.05rem; margin-top: 0.65rem; }
+    /* MEJORA: Beneficios concretos antes del form */
+    .newsletter-benefits {
+      display: flex; justify-content: center; gap: 2rem;
+      flex-wrap: wrap; margin: 1.5rem 0;
+    }
+    .nl-benefit {
+      display: flex; align-items: center; gap: 0.5rem;
+      font-family: 'DM Sans', sans-serif; font-size: 0.82rem;
+      color: rgba(255,255,255,0.7);
+    }
+    .nl-benefit-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--teal); }
+    .newsletter-form {
+      display: flex; gap: 0.7rem;
+      max-width: 460px; margin: 0 auto; flex-wrap: wrap;
+    }
+    .newsletter-form input[type="email"] {
+      flex: 1; min-width: 200px;
+      padding: 0.82rem 1.2rem;
+      border-radius: var(--radius-sm);
+      border: 1.5px solid rgba(255,255,255,0.18);
+      background: rgba(255,255,255,0.07);
+      color: var(--white); font-family: 'DM Sans', sans-serif; font-size: 0.92rem;
+      outline: none; transition: border-color 0.2s;
+    }
+    .newsletter-form input::placeholder { color: rgba(255,255,255,0.4); }
+    .newsletter-form input:focus { border-color: var(--teal); }
+    .newsletter-disclaimer { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; color: rgba(255,255,255,0.38); margin-top: 0.85rem; }
+    .newsletter-disclaimer a { color: rgba(255,255,255,0.55); }
+
+    /* ─────────────────────────────────────────────────────
+       CONTACTO
+    ───────────────────────────────────────────────────── */
+    .contact-info-row { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.1rem; }
+    .contact-icon { width: 38px; height: 38px; border-radius: 8px; background: rgba(44,122,110,0.1); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+    .contact-label { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); }
+    .contact-value { font-family: 'DM Sans', sans-serif; font-size: 0.93rem; font-weight: 500; color: var(--navy); }
+    /* Inputs del formulario de contacto */
+    .form-label { font-family: 'DM Sans', sans-serif; font-size: 0.78rem; font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.38rem; }
+    .form-input {
+      width: 100%; padding: 0.72rem 1rem;
+      border: 1.5px solid var(--border); border-radius: var(--radius-sm);
+      font-family: 'DM Sans', sans-serif; font-size: 0.88rem;
+      color: var(--navy); background: var(--cream); outline: none;
+      transition: border-color 0.2s;
+    }
+    .form-input:focus { border-color: var(--teal); }
+    .form-group { margin-bottom: 1rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+    /* ─────────────────────────────────────────────────────
+       FOOTER
+    ───────────────────────────────────────────────────── */
+    footer { background: #111e2b; color: rgba(255,255,255,0.7); padding: 4rem 0 2rem; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .footer-brand .nav-logo { font-size: 1.35rem; color: var(--white); display: block; margin-bottom: 0.9rem; }
+    .footer-brand p { font-size: 0.88rem; color: rgba(255,255,255,0.52); line-height: 1.7; }
+    .footer-col h4 { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 0.9rem; font-weight: 600; }
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: 0.45rem; }
+    .footer-links a { font-family: 'DM Sans', sans-serif; font-size: 0.85rem; color: rgba(255,255,255,0.62); transition: color 0.2s; }
+    .footer-links a:hover { color: var(--white); }
+    .footer-bottom { display: flex; align-items: center; justify-content: space-between; padding-top: 1.85rem; flex-wrap: wrap; gap: 1rem; }
+    .footer-bottom p { font-family: 'DM Sans', sans-serif; font-size: 0.78rem; color: rgba(255,255,255,0.32); margin: 0; }
+    .social-links { display: flex; gap: 0.6rem; margin-top: 1.35rem; }
+    .social-link {
+      width: 34px; height: 34px; border-radius: 7px;
+      background: rgba(255,255,255,0.055); border: 1px solid rgba(255,255,255,0.09);
+      display: flex; align-items: center; justify-content: center;
+      transition: all 0.2s; color: rgba(255,255,255,0.55);
+      font-family: 'DM Sans', sans-serif; font-size: 0.68rem; font-weight: 600;
+    }
+    .social-link:hover { background: rgba(44,122,110,0.28); color: var(--white); border-color: var(--teal); }
+    .footer-legal { display: flex; gap: 1.35rem; }
+    .footer-legal a { font-family: 'DM Sans', sans-serif; font-size: 0.76rem; color: rgba(255,255,255,0.36); transition: color 0.2s; }
+    .footer-legal a:hover { color: rgba(255,255,255,0.65); }
+
+    /* ─────────────────────────────────────────────────────
+       RESPONSIVE
+    ───────────────────────────────────────────────────── */
+    @media (max-width: 960px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-visual { display: none; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .services-intro { flex-direction: column; gap: 1.25rem; }
+      .about-tag-float { right: 0.5rem; }
+    }
+    @media (max-width: 640px) {
+      .nav-links, .nav-cta-wrap { display: none; }
+      .hamburger { display: flex; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .opos-inner { text-align: center; justify-content: center; }
+      .opos-stats { justify-content: center; }
+      .sticky-cta p { display: none; }
+    }
+
+    /* ─────────────────────────────────────────────────────
+       ANIMACIONES
+    ───────────────────────────────────────────────────── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .hero-content > * { animation: fadeUp 0.65s ease both; }
+    .hero-eyebrow { animation-delay: 0s; }
+    .hero h1      { animation-delay: 0.08s; }
+    .hero-sub     { animation-delay: 0.16s; }
+    .btn-group    { animation-delay: 0.24s; }
+    .hero-proof   { animation-delay: 0.32s; }
+    .stat-row     { animation-delay: 0.4s; }
+  </style>
+</head>
+
+<body>
+
+<!-- ═══════════════════════════════════════════════════
+     MEJORA 7: BARRA CTA FLOTANTE
+     Aparece al salir del hero. Siempre visible el paso
+     más importante para el usuario en cada momento.
+═══════════════════════════════════════════════════ -->
+<div class="sticky-cta" id="stickyCTA" role="complementary" aria-label="Acciones rápidas">
+  <p class="sans">¿Listo para empezar? Elige lo que necesitas ahora:</p>
+  <div style="display:flex;gap:0.65rem;flex-wrap:wrap;justify-content:center;">
+    <a href="#recursos"  class="btn btn-primary btn-sm sans">Descargar recursos gratis</a>
+    <a href="#servicios" class="btn btn-outline-white btn-sm sans">Trabaja conmigo →</a>
+  </div>
+  <button class="sticky-cta-close sans" id="closeStickyBtn" aria-label="Cerrar">✕</button>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════
+     NAVEGACIÓN
+     MEJORA: Dos CTAs en nav (recursos + contacto)
+     para capturar intenciones diferentes
+═══════════════════════════════════════════════════ -->
+<nav class="nav" role="navigation" aria-label="Navegación principal">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Tu<span>Nombre</span></a>
+
+      <ul class="nav-links sans">
+        <li><a href="#inicio" class="active">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#oposiciones">Oposiciones</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+
+      <!-- MEJORA: Dos CTAs con intención distinta -->
+      <div class="nav-cta-wrap">
+        <a href="#recursos"  class="btn btn-outline-teal btn-sm sans">Recursos gratis</a>
+        <a href="#contacto"  class="btn btn-secondary btn-sm sans">Trabaja conmigo</a>
+      </div>
+
+      <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════════════
+     HERO — MEJORA 1
+     Nuevo mensaje: problema → audiencia → solución
+     CTA primario: descarga directa (conversión)
+     CTA secundario: servicios (comercial)
+     Prueba social inmediata debajo del CTA
+═══════════════════════════════════════════════════ -->
+<section class="hero" id="inicio" aria-labelledby="hero-heading">
+  <div class="container">
+    <div class="hero-inner">
+
+      <div class="hero-content">
+        <!-- MEJORA: Eyebrow con especialidades concretas -->
+        <div class="hero-eyebrow sans">Maestro especialista · PT · AL · Orientación</div>
+
+        <!-- MEJORA: H1 con estructura clara: quién, qué problema, qué solución -->
+        <h1 id="hero-heading">
+          Los recursos PT y AL que<br>
+          <em>nadie te da</em> en la carrera.<br>
+          Aquí los tienes.
+        </h1>
+
+        <!-- MEJORA: Subtítulo más concreto y orientado a resultado -->
+        <p class="hero-sub">
+          Materiales reales, formación práctica y acompañamiento directo para
+          docentes especialistas, opositores PT/AL y familias que quieren
+          entender el sistema educativo.
+        </p>
+
+        <!-- MEJORA: CTAs activos y con intención clara -->
+        <div class="btn-group">
+          <a href="#recursos"  class="btn btn-primary btn-lg sans">Descargar recursos gratis</a>
+          <a href="#servicios" class="btn btn-outline btn-lg sans">Trabaja conmigo →</a>
+        </div>
+
+        <!-- MEJORA: Prueba social inmediata — reduce fricción de la descarga -->
+        <div class="hero-proof">
+          <span class="hero-proof-item sans"><span class="hero-proof-dot"></span>+1.200 docentes ya usan estos materiales</span>
+          <span class="hero-proof-item sans"><span class="hero-proof-dot"></span>Gratis, sin tarjeta</span>
+          <span class="hero-proof-item sans"><span class="hero-proof-dot"></span>Descarga inmediata</span>
+        </div>
+
+        <div class="stat-row">
+          <div><div class="stat-num">+8</div><div class="stat-label sans">Años en aulas reales</div></div>
+          <div><div class="stat-num">+200</div><div class="stat-label sans">Recursos creados</div></div>
+          <div><div class="stat-num">PT · AL</div><div class="stat-label sans">Habilitado en ambas</div></div>
+        </div>
+      </div>
+
+      <!-- Visual lateral — card de recurso destacado -->
+      <div class="hero-visual" style="position:relative;">
+        <div class="hero-card-main">
+          <!-- MEJORA: Tag con icono de descarga -->
+          <div class="hero-card-tag sans">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Recurso destacado · Gratis
+          </div>
+          <h3>Guía completa de programación didáctica PT para oposición</h3>
+          <p style="font-size:0.9rem;color:var(--text-muted);">Lo que los tribunales esperan y cómo dárselo. Estructurada, actualizada y comentada con ejemplos reales.</p>
+
+          <!-- MEJORA: Lista de qué incluye para subir el valor percibido -->
+          <ul class="hero-resource-list">
+            <li>Estructura completa de la programación</li>
+            <li>Criterios actualizados por CCAA</li>
+            <li>3 ejemplos de unidades didácticas comentadas</li>
+            <li>Errores frecuentes en tribunal y cómo evitarlos</li>
+            <li>42 páginas en PDF descargable</li>
+          </ul>
+
+          <!-- MEJORA: Inline email form en el hero -->
+          <form onsubmit="handleHeroDownload(event)" style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+            <input type="email" placeholder="tu@email.com" required style="flex:1;min-width:160px;padding:0.7rem 0.9rem;border:1.5px solid var(--border);border-radius:var(--radius-sm);font-family:'DM Sans',sans-serif;font-size:0.85rem;color:var(--navy);background:var(--cream);outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#2C7A6E'" onblur="this.style.borderColor='var(--border)'" />
+            <button type="submit" class="btn btn-primary sans" style="white-space:nowrap;">
+              Descargar gratis
+            </button>
+          </form>
+          <p style="font-size:0.7rem;color:var(--text-muted);margin-top:0.6rem;">Sin spam. Te envío el PDF directo. Puedes darte de baja cuando quieras.</p>
+        </div>
+
+        <div class="hero-card-float sans">
+          <span class="num">1.200+</span>
+          docentes lo tienen ya
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     TRUST BAR
+═══════════════════════════════════════════════════ -->
+<div class="trust-bar" role="complementary" aria-label="Credenciales">
+  <div class="container">
+    <div class="trust-items">
+      <div class="trust-item sans"><span class="trust-dot"></span>Maestro especialista PT y AL</div>
+      <div class="trust-item sans"><span class="trust-dot"></span>Orientador educativo habilitado</div>
+      <div class="trust-item sans"><span class="trust-dot"></span>Psicopedagogía clínica y educativa</div>
+      <div class="trust-item sans"><span class="trust-dot"></span>+8 años en centros públicos y concertados</div>
+      <div class="trust-item sans"><span class="trust-dot"></span>Formador de opositores</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════
+     PARA QUIÉN SOY
+═══════════════════════════════════════════════════ -->
+<section class="section section--alt" aria-labelledby="audience-heading">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-eyebrow">A quién ayudo</div>
+      <h2 id="audience-heading">¿Esto es para ti?</h2>
+      <div class="divider center"></div>
+      <p>Trabajo con personas que se toman en serio su práctica docente y necesitan recursos que puedan usar en el aula o en la oposición mañana mismo.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="audience-card">
+        <span class="audience-icon">🎓</span>
+        <h3>Opositores PT y AL</h3>
+        <div class="divider" style="margin:0.65rem 0 0.9rem;"></div>
+        <p style="font-size:0.93rem;">Materiales reales, programaciones comentadas y casos prácticos resueltos. Sin relleno, sin teoría vacía.</p>
+        <ul class="audience-list">
+          <li>Programaciones didácticas actualizadas</li>
+          <li>Casos prácticos con resolución detallada</li>
+          <li>Temas esquematizados y resumidos</li>
+          <li>Preparación de la parte oral</li>
+        </ul>
+        <a href="#oposiciones" class="btn btn-ghost sans" style="margin-top:1.15rem;display:inline-flex;align-items:center;gap:0.35rem;">Ver sección oposiciones →</a>
+      </div>
+
+      <div class="audience-card">
+        <span class="audience-icon">👩‍🏫</span>
+        <h3>Docentes y orientadores</h3>
+        <div class="divider" style="margin:0.65rem 0 0.9rem;"></div>
+        <p style="font-size:0.93rem;">Recursos para el aula, protocolos de intervención y formación práctica sobre NEE e inclusión educativa.</p>
+        <ul class="audience-list">
+          <li>Materiales adaptados y diferenciados</li>
+          <li>Protocolos de evaluación psicopedagógica</li>
+          <li>Plantillas de informes editables</li>
+          <li>Recursos para dificultades específicas</li>
+        </ul>
+        <a href="#recursos" class="btn btn-ghost sans" style="margin-top:1.15rem;display:inline-flex;align-items:center;gap:0.35rem;">Ver recursos →</a>
+      </div>
+
+      <div class="audience-card">
+        <span class="audience-icon">👨‍👩‍👧</span>
+        <h3>Familias</h3>
+        <div class="divider" style="margin:0.65rem 0 0.9rem;"></div>
+        <p style="font-size:0.93rem;">Guías claras para entender el sistema, los derechos de vuestros hijos y cómo acompañarles de verdad.</p>
+        <ul class="audience-list">
+          <li>Qué es el PT y el AL, cómo pedir apoyo</li>
+          <li>Cómo leer un informe psicopedagógico</li>
+          <li>Orientación para dislexia, TEA, TDAH</li>
+          <li>Cómo trabajar con el equipo docente</li>
+        </ul>
+        <a href="#blog" class="btn btn-ghost sans" style="margin-top:1.15rem;display:inline-flex;align-items:center;gap:0.35rem;">Leer artículos →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SOBRE MÍ — MEJORA 5
+     ADELANTADA antes de servicios.
+     Añadido bloque explícito "Por qué confiar en mí"
+     Historia personal breve que humaniza sin perder autoridad.
+═══════════════════════════════════════════════════ -->
+<section class="section" id="sobre-mi" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="grid-2" style="gap:4.5rem;">
+
+      <!-- Foto placeholder profesional -->
+      <div style="position:relative;">
+        <div class="about-photo">
+          <!-- Sustituir por: <img src="foto.jpg" alt="Tu nombre, especialista PT y AL"> -->
+          <div class="about-photo-placeholder">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#2C7A6E" stroke-width="1.5">
+              <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+            </svg>
+            <span class="sans" style="font-size:0.8rem;color:var(--text-muted);">Tu foto aquí</span>
+          </div>
+        </div>
+        <div class="about-tag-float sans">Especialista PT y AL</div>
+      </div>
+
+      <!-- Texto -->
+      <div>
+        <div class="section-eyebrow">Sobre mí</div>
+        <h2 id="about-heading">Soy [Tu Nombre].<br>Llevo 8 años en esto.</h2>
+        <div class="divider"></div>
+
+        <!-- MEJORA: Párrafo de apertura personal y directo -->
+        <p class="lead">
+          Empecé haciendo lo que me enseñaron en la carrera. Al tercer mes de estar en un aula real, me di cuenta de que no funcionaba casi nada. Así que aprendí por las malas, y después lo escribí todo para que tú no tengas que hacerlo.
+        </p>
+        <p>
+          Soy maestro especialista en PT y AL, orientador educativo y psicopedagogo. He trabajado en colegios públicos, concertados y en gabinete privado en España. He preparado opositores que han aprobado y he acompañado a familias en momentos difíciles.
+        </p>
+
+        <!-- MEJORA: Bloque explícito "Por qué confiar en mí" -->
+        <div class="trust-reasons">
+          <div class="trust-reason">
+            <div class="trust-reason-icon">🎓</div>
+            <div class="trust-reason-text">
+              <h4 class="sans">Formación especializada real</h4>
+              <p>Máster en Psicopedagogía, habilitación PT y AL, orientador educativo. No soy generalista: me he especializado durante 8 años en exactamente lo que enseño.</p>
+            </div>
+          </div>
+          <div class="trust-reason">
+            <div class="trust-reason-icon">🏫</div>
+            <div class="trust-reason-text">
+              <h4 class="sans">Lo que enseño, lo he hecho</h4>
+              <p>Cada recurso que descargues viene de la práctica real en el aula, no de un libro. Cada consejo que te doy es porque yo también lo apliqué primero.</p>
+            </div>
+          </div>
+          <div class="trust-reason">
+            <div class="trust-reason-icon">✅</div>
+            <div class="trust-reason-text">
+              <h4 class="sans">Resultados concretos</h4>
+              <p>Más de 1.200 docentes usan mis materiales. Los opositores que he preparado han aprobado en convocatorias reales. No hay métricas inventadas aquí.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="credentials">
+          <span class="credential">Máster Psicopedagogía</span>
+          <span class="credential">Habilitado PT y AL</span>
+          <span class="credential">Orientador educativo</span>
+          <span class="credential">Formador docentes</span>
+          <span class="credential">TEA y NEAE</span>
+          <span class="credential">Logopedia educativa</span>
+        </div>
+
+        <div class="btn-group" style="margin-top:2rem;">
+          <a href="#" class="btn btn-outline sans">Conocer mi historia completa</a>
+          <a href="#contacto" class="btn btn-ghost sans" style="display:inline-flex;align-items:center;gap:0.35rem;">Contactar →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SERVICIOS — MEJORA 2
+     Adelantados. Intro con propuesta directa.
+     Proceso visible en el card principal.
+     CTAs activos: "Reservar", "Empezar", "Solicitar".
+     Garantía de respuesta para reducir fricción.
+═══════════════════════════════════════════════════ -->
+<section class="section section--alt" id="servicios" aria-labelledby="services-heading">
+  <div class="container">
+
+    <!-- MEJORA: Encabezado de sección con propuesta directa -->
+    <div class="section-header center">
+      <div class="section-eyebrow">Servicios</div>
+      <h2 id="services-heading">Cómo puedo ayudarte directamente</h2>
+      <div class="divider center"></div>
+      <p>No soy un curso pregrabado. Trabajo contigo, contigo en concreto, con tu situación específica. Si necesitas algo que no ves aquí, <a href="#contacto">escríbeme</a>.</p>
+    </div>
+
+    <!-- MEJORA: Intro de servicios — propuesta directa antes de los cards -->
+    <div class="services-intro">
+      <div>
+        <h3>Si tienes dudas sobre cuál es para ti, escríbeme primero.</h3>
+        <p>Respondo en menos de 48 horas laborables. Una consulta inicial es siempre gratuita.</p>
+      </div>
+      <a href="#contacto" class="btn btn-outline-white sans" style="white-space:nowrap;">Hacer consulta gratuita →</a>
+    </div>
+
+    <div class="grid-3">
+
+      <!-- Servicio 1 -->
+      <div class="service-card">
+        <div class="icon-box">🎯</div>
+        <h3>Preparación de oposición PT/AL</h3>
+        <p>Acompañamiento individual para preparar tu oposición con materiales reales, programaciones revisadas y simulacros de tribunal. Sé exactamente qué buscan los tribunales.</p>
+
+        <ul class="service-includes">
+          <li>Sesiones individuales por videollamada</li>
+          <li>Revisión y corrección de tu programación</li>
+          <li>Casos prácticos corregidos y comentados</li>
+          <li>Acceso a materiales exclusivos actualizados</li>
+          <li>Grupo privado de seguimiento entre sesiones</li>
+        </ul>
+
+        <div class="service-price">Desde 60€ <span>/ sesión individual</span></div>
+        <!-- MEJORA: CTA activo -->
+        <a href="#contacto" class="btn btn-primary sans" style="margin-top:0.75rem;justify-content:center;">Empezar preparación →</a>
+        <div class="service-guarantee sans">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Respuesta en menos de 48h
+        </div>
+      </div>
+
+      <!-- Servicio 2 — DESTACADO -->
+      <div class="service-card featured">
+        <span class="badge badge-new" style="margin-bottom:0.75rem;">Más solicitado</span>
+        <div class="icon-box">🧭</div>
+        <h3>Asesoría psicopedagógica 1:1</h3>
+        <p>Sesión individual de 60 minutos para resolver tu situación concreta: un alumno, un caso, una decisión difícil. Te doy un plan que puedes aplicar al día siguiente.</p>
+
+        <!-- MEJORA: Proceso visible — reduce incertidumbre -->
+        <div class="service-process">
+          <div class="service-process-title sans">Cómo funciona</div>
+          <div class="service-steps">
+            <div class="service-step">
+              <span class="step-num">1</span>
+              <span class="step-label sans">Reservas</span>
+            </div>
+            <div class="service-step">
+              <span class="step-num">2</span>
+              <span class="step-label sans">Sesión 60'</span>
+            </div>
+            <div class="service-step">
+              <span class="step-num">3</span>
+              <span class="step-label sans">Plan + recursos</span>
+            </div>
+          </div>
+        </div>
+
+        <ul class="service-includes">
+          <li>Sesión de 60 minutos por videollamada</li>
+          <li>Informe-resumen con recomendaciones concretas</li>
+          <li>Recursos específicos para tu situación</li>
+          <li>Seguimiento por email durante 7 días</li>
+        </ul>
+
+        <div class="service-price">75€ <span>/ sesión · Pago único</span></div>
+        <!-- MEJORA: CTA activo con acción concreta -->
+        <a href="#contacto" class="btn btn-primary sans" style="margin-top:0.75rem;justify-content:center;">Reservar sesión ahora →</a>
+        <div class="service-guarantee sans">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Próxima disponibilidad esta semana
+        </div>
+      </div>
+
+      <!-- Servicio 3 -->
+      <div class="service-card">
+        <div class="icon-box icon-box--terra">🏫</div>
+        <h3>Formación para centros educativos</h3>
+        <p>Talleres y formación a medida para claustros y equipos de orientación. Diseño la formación según vuestras necesidades reales, no una charla genérica.</p>
+
+        <ul class="service-includes">
+          <li>Formación presencial u online</li>
+          <li>Diseño completamente personalizado</li>
+          <li>Materiales incluidos para todos los asistentes</li>
+          <li>Certificado de asistencia homologable</li>
+          <li>Memoria y plan de seguimiento</li>
+        </ul>
+
+        <div class="service-price">Consultar <span>/ según proyecto</span></div>
+        <!-- MEJORA: CTA activo -->
+        <a href="#contacto" class="btn btn-outline sans" style="margin-top:0.75rem;justify-content:center;">Solicitar presupuesto →</a>
+        <div class="service-guarantee sans">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Presupuesto sin compromiso en 24h
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     TESTIMONIOS — Adelantados para reforzar servicios
+     MEJORA: Resultado concreto destacado en cada uno
+═══════════════════════════════════════════════════ -->
+<section class="section section--cream" aria-labelledby="testimonials-heading">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-eyebrow">Testimonios</div>
+      <h2 id="testimonials-heading">Lo que dicen quienes ya trabajan conmigo</h2>
+      <div class="divider center"></div>
+    </div>
+
+    <div class="grid-3">
+
+      <div class="testimonial-card">
+        <!-- MEJORA: Resultado concreto destacado -->
+        <div class="testimonial-result">✓ Aprobó en primera convocatoria</div>
+        <p class="testimonial-text">Gracias a sus materiales de oposición conseguí aprobar en la primera convocatoria. La guía de programación es lo más claro y honesto que he encontrado para PT. Nada de palabrería ni de cosas que nunca se usan.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">ML</div>
+          <div>
+            <span class="testimonial-name">María L.</span>
+            <span class="testimonial-role">Maestra PT — Convocatoria 2023</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-result">✓ Plan concreto en 60 minutos</div>
+        <p class="testimonial-text">La asesoría fue muy diferente a lo que esperaba. No me dio teoría, me dio un plan aplicable al día siguiente para mi alumno con TEA. Salí de la sesión con recursos específicos y supe exactamente qué hacer.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">JR</div>
+          <div>
+            <span class="testimonial-name">Javier R.</span>
+            <span class="testimonial-role">Tutor de Primaria — Madrid</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-result">✓ Implementado en todo el equipo</div>
+        <p class="testimonial-text">Llevamos usando sus plantillas de informe psicopedagógico en todo el equipo de orientación. Nos ha ahorrado horas de trabajo cada semana y el formato es mucho más profesional y útil que lo que teníamos antes.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">AC</div>
+          <div>
+            <span class="testimonial-name">Ana C.</span>
+            <span class="testimonial-role">Orientadora — IES Extremadura</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     RECURSOS — MEJORA 3
+     Cabeceras de color por categoría (sin emojis)
+     Formulario email inline en cada recurso gratuito
+     Contador de descargas (prueba social)
+     Lista "qué incluye" para subir valor percibido
+═══════════════════════════════════════════════════ -->
+<section class="section section--alt" id="recursos" aria-labelledby="resources-heading">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-eyebrow">Recursos descargables</div>
+      <h2 id="resources-heading">Empieza por aquí. Son gratis.</h2>
+      <div class="divider center"></div>
+      <p>Materiales creados desde la práctica real. Cada recurso incluye lo que necesitas sin relleno. Los gratuitos se descargan dejando tu email — recibirás el archivo directamente.</p>
+    </div>
+
+    <div class="grid-3">
+
+      <!-- Recurso 1 — Gratuito -->
+      <div class="resource-card">
+        <div class="resource-header resource-header--teal">
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <span class="badge badge-free">Gratis</span>
+            <span class="tag sans">Oposiciones · PT</span>
+          </div>
+          <div class="resource-format-row">
+            <div class="resource-format sans">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              PDF · 42 páginas
+            </div>
+          </div>
+        </div>
+        <div class="resource-body">
+          <h3>Guía de programación didáctica PT para oposición</h3>
+          <p>Estructura completa, criterios actualizados y ejemplos reales de lo que piden los tribunales.</p>
+          <!-- MEJORA: Lista de qué incluye exactamente -->
+          <ul class="resource-includes">
+            <li>Estructura por bloques explicada</li>
+            <li>Criterios actualizados por comunidades</li>
+            <li>3 unidades didácticas de ejemplo</li>
+            <li>Errores comunes en tribunal</li>
+          </ul>
+          <div class="resource-download">
+            <div class="resource-download-label sans">Introduce tu email y te lo envío ahora:</div>
+            <!-- MEJORA: Formulario inline — no redirect a otra sección -->
+            <form class="resource-email-form" onsubmit="handleResourceDownload(event, 'guia-pt')">
+              <input type="email" placeholder="tu@email.com" required />
+              <button type="submit" class="btn btn-primary btn-sm sans">Descargar</button>
+            </form>
+            <div class="download-count sans">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/></svg>
+              1.247 descargas
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recurso 2 — Gratuito -->
+      <div class="resource-card">
+        <div class="resource-header resource-header--navy">
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <span class="badge badge-free">Gratis</span>
+            <span class="tag sans">Orientación</span>
+          </div>
+          <div class="resource-format-row">
+            <div class="resource-format sans">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+              Word editable · 3 plantillas
+            </div>
+          </div>
+        </div>
+        <div class="resource-body">
+          <h3>Plantillas de informe psicopedagógico editables</h3>
+          <p>Tres plantillas adaptadas a distintas etapas, basadas en los modelos oficiales más usados en España.</p>
+          <ul class="resource-includes">
+            <li>Modelo Infantil y Primaria</li>
+            <li>Modelo Secundaria</li>
+            <li>Modelo dictamen de escolarización</li>
+            <li>Campos editables con instrucciones</li>
+          </ul>
+          <div class="resource-download">
+            <div class="resource-download-label sans">Introduce tu email y te lo envío ahora:</div>
+            <form class="resource-email-form" onsubmit="handleResourceDownload(event, 'plantillas-informe')">
+              <input type="email" placeholder="tu@email.com" required />
+              <button type="submit" class="btn btn-primary btn-sm sans">Descargar</button>
+            </form>
+            <div class="download-count sans">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/></svg>
+              892 descargas
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recurso 3 — Gratuito -->
+      <div class="resource-card">
+        <div class="resource-header resource-header--gold">
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <span class="badge badge-free">Gratis</span>
+            <span class="tag sans">AL · Oposiciones</span>
+          </div>
+          <div class="resource-format-row">
+            <div class="resource-format sans">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              PDF · Checklist
+            </div>
+          </div>
+        </div>
+        <div class="resource-body">
+          <h3>Checklist de preparación para oposición AL</h3>
+          <p>Todo lo que tienes que preparar, organizado por meses con fechas orientativas y prioridades claras.</p>
+          <ul class="resource-includes">
+            <li>Cronograma de 6 meses</li>
+            <li>Prioridades por bloques de temario</li>
+            <li>Hitos y fechas clave por CCAA</li>
+            <li>Checklists semanales editables</li>
+          </ul>
+          <div class="resource-download">
+            <div class="resource-download-label sans">Introduce tu email y te lo envío ahora:</div>
+            <form class="resource-email-form" onsubmit="handleResourceDownload(event, 'checklist-al')">
+              <input type="email" placeholder="tu@email.com" required />
+              <button type="submit" class="btn btn-primary btn-sm sans">Descargar</button>
+            </form>
+            <div class="download-count sans">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/></svg>
+              634 descargas
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recurso 4 — Premium -->
+      <div class="resource-card">
+        <div class="resource-header resource-header--terra">
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <span class="badge badge-premium">Premium</span>
+            <span class="tag sans" style="background:rgba(201,106,58,0.15);color:#8c3f15;">PT · AL</span>
+          </div>
+          <div class="resource-format-row">
+            <div class="resource-format sans">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+              Pack · 6 archivos
+            </div>
+          </div>
+        </div>
+        <div class="resource-body">
+          <h3>Pack de materiales para intervención con dislexia</h3>
+          <p>Fichas de trabajo, evaluación y seguimiento para intervención en dislexia. Adaptado a Primaria y Secundaria.</p>
+          <ul class="resource-includes">
+            <li>20 fichas de trabajo graduadas</li>
+            <li>Protocolo de evaluación inicial</li>
+            <li>Registro de seguimiento trimestral</li>
+            <li>Guía para familias (editable)</li>
+          </ul>
+          <div class="resource-lock">
+            <div class="resource-lock-info sans">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Disponible en el área de contenido premium
+            </div>
+            <a href="#servicios" class="btn btn-secondary btn-sm sans">Acceder al área premium →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recurso 5 — Premium -->
+      <div class="resource-card">
+        <div class="resource-header resource-header--terra">
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <span class="badge badge-premium">Premium</span>
+            <span class="tag sans" style="background:rgba(201,106,58,0.15);color:#8c3f15;">Organización</span>
+          </div>
+          <div class="resource-format-row">
+            <div class="resource-format sans">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+              Excel interactivo
+            </div>
+          </div>
+        </div>
+        <div class="resource-body">
+          <h3>Planificador de intervención PT trimestral</h3>
+          <p>Organiza tus sesiones, objetivos e indicadores de logro con fórmulas automáticas para seguimiento por alumno.</p>
+          <ul class="resource-includes">
+            <li>Hasta 30 alumnos simultáneos</li>
+            <li>Cálculo automático de progreso</li>
+            <li>Exportable a informe trimestral</li>
+            <li>Compatible con Excel y Google Sheets</li>
+          </ul>
+          <div class="resource-lock">
+            <div class="resource-lock-info sans">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Disponible en el área de contenido premium
+            </div>
+            <a href="#servicios" class="btn btn-secondary btn-sm sans">Acceder al área premium →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card "ver todos" -->
+      <div class="resource-card" style="background:var(--cream-dark);border-style:dashed;border-color:rgba(26,46,68,0.2);">
+        <div style="text-align:center;padding:2.5rem 1rem;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:1rem;">
+          <div style="width:50px;height:50px;border-radius:50%;background:var(--white);display:flex;align-items:center;justify-content:center;border:1px solid var(--border);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2C7A6E" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div>
+            <h3 style="font-size:1.05rem;">Biblioteca completa</h3>
+            <p style="font-size:0.88rem;margin-top:0.4rem;">Más de 50 recursos organizados por especialidad, etapa educativa y tipo de material.</p>
+          </div>
+          <a href="#" class="btn btn-primary sans">Ver todos los recursos →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     OPOSICIONES STRIP — MEJORA: Mini-stats añadidas
+═══════════════════════════════════════════════════ -->
+<div class="opos-strip" id="oposiciones">
+  <div class="container">
+    <div class="opos-inner">
+      <div>
+        <h2>¿Preparando la oposición de PT o AL?</h2>
+        <p>Tengo una sección completa con materiales, guías, casos prácticos y acompañamiento directo.</p>
+        <!-- MEJORA: Mini-stats para reforzar la propuesta -->
+        <div class="opos-stats" style="margin-top:1.25rem;">
+          <div><span class="opos-stat-num">+40</span><span class="opos-stat-lbl sans">Recursos de oposición</span></div>
+          <div><span class="opos-stat-num">PT y AL</span><span class="opos-stat-lbl sans">Ambas especialidades</span></div>
+          <div><span class="opos-stat-num">Todas</span><span class="opos-stat-lbl sans">Comunidades autónomas</span></div>
+        </div>
+      </div>
+      <a href="#" class="btn btn-outline-white btn-lg sans" style="white-space:nowrap;">Ir a oposiciones →</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════
+     BLOG — MEJORA 4
+     Sin emojis como thumbnail.
+     Thumbnails tipográficos con fondo de color por categoría.
+     Número decorativo de fondo. Estilo editorial.
+     Añadido tiempo de lectura.
+═══════════════════════════════════════════════════ -->
+<section class="section" id="blog" aria-labelledby="blog-heading">
+  <div class="container">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:3rem;">
+      <div class="section-header">
+        <div class="section-eyebrow">Blog</div>
+        <h2 id="blog-heading">Últimos artículos</h2>
+        <div class="divider"></div>
+        <p style="font-size:0.95rem;margin-top:0.5rem;">Contenido útil sobre PT, AL, oposiciones y orientación educativa.</p>
+      </div>
+      <a href="#" class="btn btn-outline sans" style="flex-shrink:0;">Ver todos los artículos →</a>
+    </div>
+
+    <div class="grid-3">
+
+      <!-- Artículo 1 — MEJORA: Thumbnail tipográfico sin emoji -->
+      <article class="blog-card">
+        <div class="blog-thumb">
+          <div class="blog-thumb-bg blog-thumb-bg--oposiciones"></div>
+          <div class="blog-thumb-num">01</div>
+          <div class="blog-thumb-content">
+            <div class="blog-thumb-category">Oposiciones PT</div>
+            <div class="blog-thumb-title">Cómo estructurar una programación PT que apruebe</div>
+          </div>
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="tag sans">Oposiciones</span>
+            <span class="blog-sep"></span>
+            <span class="blog-date sans">12 mar 2025</span>
+            <span class="blog-sep"></span>
+            <span class="blog-read-time sans">8 min</span>
+          </div>
+          <p>Los errores más comunes en programaciones PT y cómo evitarlos. Con ejemplos reales de lo que buscan los tribunales en convocatorias recientes.</p>
+          <a href="#" class="blog-read-more sans">Leer artículo <span>→</span></a>
+        </div>
+      </article>
+
+      <!-- Artículo 2 -->
+      <article class="blog-card">
+        <div class="blog-thumb">
+          <div class="blog-thumb-bg blog-thumb-bg--al"></div>
+          <div class="blog-thumb-num">02</div>
+          <div class="blog-thumb-content">
+            <div class="blog-thumb-category">AL · Perfil profesional</div>
+            <div class="blog-thumb-title">Diferencias PT y AL: funciones reales</div>
+          </div>
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="tag sans">AL</span>
+            <span class="blog-sep"></span>
+            <span class="blog-date sans">28 feb 2025</span>
+            <span class="blog-sep"></span>
+            <span class="blog-read-time sans">6 min</span>
+          </div>
+          <p>Muchos docentes no tienen claro cuál es el rol de cada especialidad. Te lo explico sin rodeos y con ejemplos de la práctica diaria en un centro.</p>
+          <a href="#" class="blog-read-more sans">Leer artículo <span>→</span></a>
+        </div>
+      </article>
+
+      <!-- Artículo 3 -->
+      <article class="blog-card">
+        <div class="blog-thumb">
+          <div class="blog-thumb-bg blog-thumb-bg--orientacion"></div>
+          <div class="blog-thumb-num">03</div>
+          <div class="blog-thumb-content">
+            <div class="blog-thumb-category">Orientación · Documentos</div>
+            <div class="blog-thumb-title">Cómo redactar un informe psicopedagógico bien</div>
+          </div>
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="tag sans">Orientación</span>
+            <span class="blog-sep"></span>
+            <span class="blog-date sans">15 feb 2025</span>
+            <span class="blog-sep"></span>
+            <span class="blog-read-time sans">10 min</span>
+          </div>
+          <p>Partes obligatorias, criterios de calidad y errores frecuentes en los informes psicopedagógicos según la normativa vigente en España.</p>
+          <a href="#" class="blog-read-more sans">Leer artículo <span>→</span></a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     NEWSLETTER — MEJORA: Beneficios concretos antes del form
+═══════════════════════════════════════════════════ -->
+<section class="section section--alt" id="newsletter">
+  <div class="container">
+    <div class="newsletter-block">
+      <div class="section-eyebrow" style="color:rgba(255,255,255,0.55);">Newsletter semanal · Gratis</div>
+      <h2>Un recurso útil cada semana.<br>Directo a tu bandeja.</h2>
+      <p>Sin spam. Sin contenido de relleno. Solo materiales e ideas que puedes usar en tu trabajo.</p>
+
+      <!-- MEJORA: Beneficios específicos antes del form -->
+      <div class="newsletter-benefits">
+        <div class="nl-benefit sans"><span class="nl-benefit-dot"></span>Recursos descargables exclusivos</div>
+        <div class="nl-benefit sans"><span class="nl-benefit-dot"></span>Artículos de fondo sobre PT y AL</div>
+        <div class="nl-benefit sans"><span class="nl-benefit-dot"></span>Avisos de convocatorias PT/AL</div>
+        <div class="nl-benefit sans"><span class="nl-benefit-dot"></span>Sin publicidad, sin spam</div>
+      </div>
+
+      <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+        <input type="email" placeholder="tu@email.com" required id="nl-email" />
+        <button type="submit" class="btn btn-primary sans">Quiero recibirlo</button>
+      </form>
+      <p class="newsletter-disclaimer">
+        Al suscribirte aceptas la <a href="#">política de privacidad</a>. Baja cuando quieras, sin preguntas.
+        Más de 1.200 docentes ya están suscritos.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     CONTACTO
+═══════════════════════════════════════════════════ -->
+<section class="section" id="contacto" aria-labelledby="contact-heading">
+  <div class="container">
+    <div class="grid-2" style="gap:4rem;align-items:start;">
+
+      <div>
+        <div class="section-eyebrow">Contacto</div>
+        <h2 id="contact-heading">Hablemos.</h2>
+        <div class="divider"></div>
+        <!-- MEJORA: Subtítulo más directo que invita a la acción -->
+        <p class="lead" style="font-size:1.08rem;">
+          Si tienes una consulta sobre oposiciones, quieres reservar una asesoría o pedir información sobre formación para tu centro, escríbeme aquí.
+        </p>
+        <p>Respondo en menos de 48 horas en días laborables. La primera consulta siempre es gratuita.</p>
+
+        <div style="margin-top:1.75rem;">
+          <div class="contact-info-row">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <div class="contact-label sans">Email directo</div>
+              <a href="mailto:hola@tunombre.es" class="contact-value">hola@tunombre.es</a>
+            </div>
+          </div>
+          <div class="contact-info-row">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-label sans">Dónde trabajo</div>
+              <span class="contact-value sans" style="color:var(--navy);">España · Sesiones online en toda la península</span>
+            </div>
+          </div>
+          <div class="contact-info-row">
+            <div class="contact-icon">⏱</div>
+            <div>
+              <div class="contact-label sans">Tiempo de respuesta</div>
+              <span class="contact-value sans" style="color:var(--navy);">Menos de 48h en días laborables</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulario de contacto -->
+      <div class="card" style="padding:2.25rem;">
+        <div class="form-row" style="margin-bottom:1rem;">
+          <div class="form-group" style="margin-bottom:0;">
+            <label class="form-label" for="contact-name">Nombre</label>
+            <input class="form-input" type="text" id="contact-name" placeholder="Tu nombre" />
+          </div>
+          <div class="form-group" style="margin-bottom:0;">
+            <label class="form-label" for="contact-email">Email</label>
+            <input class="form-input" type="email" id="contact-email" placeholder="tu@email.com" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="contact-subject">¿En qué puedo ayudarte?</label>
+          <select class="form-input" id="contact-subject">
+            <option value="">Selecciona una opción…</option>
+            <option>Preparación de oposición PT</option>
+            <option>Preparación de oposición AL</option>
+            <option>Asesoría psicopedagógica</option>
+            <option>Formación para mi centro</option>
+            <option>Recursos o materiales</option>
+            <option>Otra consulta</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="contact-msg">Cuéntame</label>
+          <textarea class="form-input" id="contact-msg" rows="5" placeholder="Explícame tu situación con el detalle que quieras. Así podré orientarte mejor desde el primer mensaje." style="resize:vertical;"></textarea>
+        </div>
+        <!-- MEJORA: CTA activo en el formulario -->
+        <button class="btn btn-primary sans" style="width:100%;justify-content:center;font-size:1rem;" onclick="handleContactSubmit()">
+          Enviar mensaje →
+        </button>
+        <p style="font-size:0.72rem;text-align:center;margin-top:0.85rem;color:var(--text-muted);">
+          Al enviar aceptas la <a href="#">política de privacidad</a>. Primera consulta gratuita.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════ -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <span class="nav-logo">Tu<span style="color:var(--teal);">Nombre</span></span>
+        <p>Especialista en PT, AL y orientación educativa. Recursos y formación para docentes, opositores y familias en España.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram">IG</a>
+          <a href="#" class="social-link" aria-label="X / Twitter">X</a>
+          <a href="#" class="social-link" aria-label="YouTube">YT</a>
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Recursos</h4>
+        <ul class="footer-links">
+          <li><a href="#">Recursos gratuitos</a></li>
+          <li><a href="#">Materiales premium</a></li>
+          <li><a href="#">Plantillas PT</a></li>
+          <li><a href="#">Plantillas AL</a></li>
+          <li><a href="#">Informes psicopedagógicos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contenido</h4>
+        <ul class="footer-links">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Oposiciones PT/AL</a></li>
+          <li><a href="#">Para familias</a></li>
+          <li><a href="#">Newsletter semanal</a></li>
+          <li><a href="#">Sobre mí</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul class="footer-links">
+          <li><a href="#">Preparación oposiciones</a></li>
+          <li><a href="#">Asesoría psicopedagógica</a></li>
+          <li><a href="#">Formación para centros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Tu Nombre · Todos los derechos reservados</p>
+      <div class="footer-legal">
+        <a href="#">Aviso legal</a>
+        <a href="#">Privacidad</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ═══════════════════════════════════════════════════
+     JAVASCRIPT
+═══════════════════════════════════════════════════ -->
+<script>
+  /* ── Barra sticky: aparece al pasar el hero ── */
+  const stickyCTA   = document.getElementById('stickyCTA');
+  const closeBtn    = document.getElementById('closeStickyBtn');
+  const hero        = document.getElementById('inicio');
+  let   stickyDismissed = false;
+
+  const stickyObs = new IntersectionObserver(([entry]) => {
+    if (!stickyDismissed) {
+      stickyCTA.classList.toggle('visible', !entry.isIntersecting);
+    }
+  }, { threshold: 0.1 });
+  stickyObs.observe(hero);
+
+  closeBtn.addEventListener('click', () => {
+    stickyDismissed = true;
+    stickyCTA.classList.remove('visible');
+  });
+
+  /* ── Nav active link on scroll ── */
+  const sections = document.querySelectorAll('section[id], div[id]');
+  const navLinks  = document.querySelectorAll('.nav-links a');
+  const linkObs   = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+        });
+      }
+    });
+  }, { threshold: 0.4 });
+  sections.forEach(s => linkObs.observe(s));
+
+  /* ── Scroll reveal para cards ── */
+  const revealEls = document.querySelectorAll(
+    '.card, .resource-card, .blog-card, .service-card, .audience-card, .testimonial-card, .trust-reason'
+  );
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity  = '1';
+        entry.target.style.transform = 'translateY(0)';
+        revealObs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  revealEls.forEach(el => {
+    el.style.opacity   = '0';
+    el.style.transform = 'translateY(14px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    revealObs.observe(el);
+  });
+
+  /* ── Formulario hero (descarga) ── */
+  function handleHeroDownload(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('button');
+    btn.textContent = '¡Enviado! Revisa tu email';
+    btn.disabled    = true;
+    btn.style.background = '#1e5a51';
+    e.target.querySelector('input').disabled = true;
+  }
+
+  /* ── Formularios inline de recursos ── */
+  function handleResourceDownload(e, resourceId) {
+    e.preventDefault();
+    const form = e.target;
+    const btn  = form.querySelector('button');
+    btn.textContent = '¡Listo! Revisa tu email';
+    btn.disabled    = true;
+    btn.style.background = '#1e5a51';
+    form.querySelector('input').disabled = true;
+    // Aquí conectarías con tu ESP (MailerLite, Brevo, etc.)
+    console.log('Descarga:', resourceId, form.querySelector('input').value);
+  }
+
+  /* ── Newsletter ── */
+  function handleNewsletterSubmit(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('button');
+    btn.textContent = '¡Suscrito! Revisa tu bandeja';
+    btn.disabled    = true;
+    btn.style.background = '#1e5a51';
+  }
+
+  /* ── Formulario de contacto ── */
+  function handleContactSubmit() {
+    const btn = document.querySelector('#contacto .btn-primary');
+    btn.textContent = '✓ Mensaje enviado — te respondo en 48h';
+    btn.disabled    = true;
+    btn.style.background = '#1e5a51';
+  }
+
+  /* ── Focus styles para inputs ── */
+  document.querySelectorAll('.form-input').forEach(input => {
+    input.addEventListener('focus', () => input.style.borderColor = '#2C7A6E');
+    input.addEventListener('blur',  () => input.style.borderColor = 'rgba(26,46,68,0.11)');
+  });
+</script>
+
+</body>
+</html>
